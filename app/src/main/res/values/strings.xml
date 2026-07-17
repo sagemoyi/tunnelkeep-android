@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TunnelKeep</string>
+
+    <!-- Main -->
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="action_reload">Reload</string>
+    <string name="action_reconnect">Reconnect</string>
+
+    <!-- Keep-alive -->
+    <string name="keep_alive_active">Keep-alive active</string>
+    <string name="keep_alive_inactive">Keep-alive stopped</string>
+    <string name="keep_alive_toggle">Enable keep-alive</string>
+    <string name="keep_alive_description">Maintains the workspace connection when the screen is off. Shows a persistent notification.</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_name">TunnelKeep Service</string>
+    <string name="notification_channel_description">Shown when the keep-alive service is running to maintain the workspace connection.</string>
+    <string name="notification_title">TunnelKeep</string>
+    <string name="notification_content">Maintaining connection to workspace</string>
+    <string name="notification_action_stop">Stop</string>
+
+    <!-- Renderer crash -->
+    <string name="renderer_crash_title">WebView Renderer Crashed</string>
+    <string name="renderer_crash_message">The WebView renderer process terminated unexpectedly. Your session state may have been lost.</string>
+    <string name="renderer_crash_reload">Reload Page</string>
+    <string name="renderer_crash_dismiss">Dismiss</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_workspace_category">Workspace</string>
+    <string name="settings_workspace_url_title">Workspace URL</string>
+    <string name="settings_workspace_url_summary">The VS Code Tunnel URL to connect to. Must use HTTPS.</string>
+    <string name="settings_reset_url">Reset to Default</string>
+    <string name="settings_reconnect">Reconnect Now</string>
+    <string name="settings_keep_alive_category">Keep-Alive</string>
+    <string name="settings_keep_alive_title">Keep-Alive Service</string>
+    <string name="settings_keep_alive_summary">When enabled, a foreground service with a persistent notification maintains the connection while the screen is off.</string>
+    <string name="settings_device_category">Device Settings</string>
+    <string name="settings_app_info">App Info</string>
+    <string name="settings_app_info_summary">Open Android app settings (battery, permissions, notifications)</string>
+    <string name="settings_battery_optimization">Battery Optimization</string>
+    <string name="settings_battery_optimization_summary">Request to disable battery optimization for this app</string>
+
+    <string name="url_dialog_title">Workspace URL</string>
+    <string name="url_dialog_message">Enter the VS Code Tunnel workspace URL:</string>
+    <string name="url_dialog_hint">https://vscode.dev/tunnel/…</string>
+    <string name="url_error_invalid">Invalid URL. Must start with https://</string>
+    <string name="url_reset_confirm">Reset URL to default?</string>
+    <string name="url_reset_message">The workspace URL will be reset to the default tunnel endpoint.</string>
+
+    <!-- Help -->
+    <string name="help_title">Help &amp; Information</string>
+    <string name="help_about">About TunnelKeep</string>
+    <string name="help_about_description">TunnelKeep is a native Android client for accessing VS Code Tunnel workspaces. It provides foreground keep-alive, connectivity recovery, and session preservation features designed for mobile workflows.</string>
+    <string name="help_disclaimer_title">Disclaimer</string>
+    <string name="help_disclaimer">TunnelKeep is not affiliated with or endorsed by Microsoft, GitHub, OpenAI, or Anthropic. It is an independent utility for personal use. Use at your own risk.</string>
+    <string name="help_hyperos_title">Xiaomi HyperOS Setup</string>
+    <string name="help_hyperos_body">
+        <![CDATA[
+        <b>To keep TunnelKeep running reliably on HyperOS:</b><br/><br/>
+        1. <b>App Info → Battery saver → No restrictions</b><br/>
+        Long-press TunnelKeep → App info → Battery saver → select "No restrictions".<br/><br/>
+        2. <b>Autostart</b><br/>
+        App Info → Autostart → enable. This reduces the chance that HyperOS blocks background operation; TunnelKeep does not automatically start itself after reboot.<br/><br/>
+        3. <b>Lock app in recents</b><br/>
+        Open recent apps → long-press TunnelKeep → tap the lock icon.<br/><br/>
+        4. <b>Security → App lock (optional)</b><br/>
+        Settings → Apps → App lock → disable for TunnelKeep if you want faster access.<br/><br/>
+        5. <b>Developer options (if available)</b><br/>
+        Under "Don't keep activities" → ensure this is OFF.<br/><br/>
+        These steps reduce the chance of HyperOS killing the keep-alive service. Real-world behavior varies by device and ROM version.
+        ]]>
+    </string>
+    <string name="help_limitations_title">Known Limitations</string>
+    <string name="help_limitations">
+        <![CDATA[
+        • <b>Screen-off behavior:</b> A partial wake lock keeps the CPU running, but some devices may still suspend WebView rendering. VS Code\'s own reconnect logic handles most interruptions.<br/><br/>
+        • <b>No offline editing:</b> The app requires an active internet connection to the VS Code Tunnel server.<br/><br/>
+        • <b>Single workspace:</b> Currently supports one workspace URL at a time.<br/><br/>
+        • <b>Battery impact:</b> The keep-alive service consumes additional battery. Disable it when not needed.<br/><br/>
+        • <b>File synchronization:</b> File changes made in the web editor are saved to the remote machine via the tunnel; local device storage is not used.
+        ]]>
+    </string>
+    <string name="help_version">Version %s</string>
+    <string name="help_source">Source</string>
+
+    <!-- Actions -->
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="loading">Loading…</string>
+    <string name="url_default">https://vscode.dev/tunnel/instance-20260610-18</string>
+</resources>

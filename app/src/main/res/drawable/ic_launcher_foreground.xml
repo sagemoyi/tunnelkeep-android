@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Tunnel icon: a passage with connection lines -->
+    <path
+        android:fillColor="#00897B"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,54a24,24 0,0 1,48 0"
+        android:strokeWidth="0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,38L42,70M50,42L50,66M58,38L58,70"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,50L70,50M36,58L72,58"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF" />
+    <!-- Connection dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,44m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="#B2DFDB"
+        android:pathData="M42,62m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+</vector>
