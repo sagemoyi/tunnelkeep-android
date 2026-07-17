@@ -77,7 +77,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
 
     // WebView
-    implementation("androidx.webkit:webkit:1.12.1")
+    implementation("androidx.webkit:webkit:1.16.0")
 
     // Preferences
     implementation("androidx.preference:preference-ktx:1.2.1")
